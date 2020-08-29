@@ -10,70 +10,70 @@ export const query = graphql`
     step1: file(relativePath: { eq: "1.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step2: file(relativePath: { eq: "2.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step3: file(relativePath: { eq: "3.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step4: file(relativePath: { eq: "4.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step5: file(relativePath: { eq: "5.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step6: file(relativePath: { eq: "6.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step7: file(relativePath: { eq: "7.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step8: file(relativePath: { eq: "8.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step9: file(relativePath: { eq: "9.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     step10: file(relativePath: { eq: "10.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

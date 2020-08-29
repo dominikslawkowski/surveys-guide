@@ -56,13 +56,11 @@ const Step = ({ image, steps, reverse }) => (
       css={imageCss(reverse)}
     />
     <h2 css={stepsCss(reverse)}>
-      <ol>
-        {steps.map(step => (
-          <li key={step} css={elementCss}>
-            {step}
-          </li>
-        ))}
-      </ol>
+      {steps.map(step => (
+        <p key={step} css={elementCss}>
+          {step}
+        </p>
+      ))}
     </h2>
   </article>
 )
