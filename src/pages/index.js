@@ -209,8 +209,7 @@ const IndexPage = ({ data }) => (
         image={data.step2}
         steps={[
           <>
-            Now set the name of your survey and click{' '}
-            {renderImage(data.save, -13)}.
+            Now set the name of survey and click {renderImage(data.save, -13)}.
           </>,
           <>
             Remember that the name will be visible for your{' '}
@@ -242,8 +241,8 @@ const IndexPage = ({ data }) => (
           <>
             While chatting, click the small icon{' '}
             {renderImage(data.surveysIcon, -7)} in the bottom of message box.
-            It's a Surveys panel for agents.
           </>,
+          <>It's a Surveys panel for agents.</>,
         ]}
       />
       <Step
@@ -281,16 +280,15 @@ const IndexPage = ({ data }) => (
         image={data.step8}
         steps={[
           <>
-            Agent will recive the message{' '}
-            {renderImage(data.visitorResponse, -12)}, after completing the
-            survey.
+            Agent will <Highlight>recive the message</Highlight>, after
+            completing the survey.
           </>,
         ]}
       />
       <Step
         image={data.step9}
         steps={[
-          <>Now you can get acquainted with the customer response.</>,
+          <>Now you can read the customer response.</>,
           <>
             Use {renderImage(data.selectType, -10)} to choose the type of survey
             presentation.
@@ -315,11 +313,36 @@ const IndexPage = ({ data }) => (
         image={data.step11}
         steps={[
           <>
-            Detailed type lets you to see{' '}
-            <Highlight>the particular survey responses</Highlight>.
+            Detailed type lets you to see the{' '}
+            <Highlight>particular survey responses</Highlight>.
           </>,
         ]}
       />
+      <h3
+        css={css`
+          margin: 50px 0;
+          width: 100%;
+          text-align: center;
+        `}
+      >
+        <p>Do your business need any additional features in Surveys?</p>
+        <p
+          css={css`
+            font-weight: 400;
+          `}
+        >
+          Contact me please at{' '}
+          <a
+            css={css`
+              color: #fecf01;
+            `}
+            href="mailto:dominik.slawkowski@gmail.com"
+          >
+            dominik.slawkowski@gmail.com
+          </a>
+          !
+        </p>
+      </h3>
     </div>
   </Layout>
 )
