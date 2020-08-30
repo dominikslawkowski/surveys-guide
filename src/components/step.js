@@ -30,12 +30,27 @@ const imageCss = reverse => css`
   -webkit-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
   box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 1400px) {
+    margin: 0 auto;
+  }
 `
 
 const stepsCss = reverse => css`
+  max-width: 40%;
   margin-left: 20px;
   margin-top: 25px;
   font-size: 25px;
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
+  }
+
+  > p {
+    color: #1c1b20;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
 
   ${reverse &&
   css`
@@ -56,8 +71,8 @@ const Step = ({ image, steps, reverse }) => (
       css={imageCss(reverse)}
     />
     <h2 css={stepsCss(reverse)}>
-      {steps.map(step => (
-        <p key={step} css={elementCss}>
+      {steps.map((step, index) => (
+        <p key={`${image.childImageSharp.fluid.src}-${index}`} css={elementCss}>
           {step}
         </p>
       ))}
