@@ -280,7 +280,7 @@ const IndexPage = ({ data }) => (
         image={data.step8}
         steps={[
           <>
-            Agent will <Highlight>recive the message</Highlight>, after
+            Agent will <Highlight>receive the message</Highlight>, after
             completing the survey.
           </>,
         ]}
