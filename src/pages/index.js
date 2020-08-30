@@ -307,6 +307,18 @@ const IndexPage = ({ data }) => (
             Summary type lets you to see{' '}
             <Highlight>overall survey results</Highlight>.
           </>,
+          <>
+            <div
+              css={css`
+                margin-bottom: 10px;
+              `}
+            >
+              Use cases:
+            </div>
+            <ul>
+              <li>checking customer opinion</li>
+            </ul>
+          </>,
         ]}
       />
       <Step
@@ -315,6 +327,18 @@ const IndexPage = ({ data }) => (
           <>
             Detailed type lets you to see the{' '}
             <Highlight>particular survey responses</Highlight>.
+          </>,
+          <>
+            <div
+              css={css`
+                margin-bottom: 10px;
+              `}
+            >
+              Use cases:
+            </div>
+            <ul>
+              <li>collecting contact details</li>
+            </ul>
           </>,
         ]}
       />
@@ -340,7 +364,7 @@ const IndexPage = ({ data }) => (
           >
             dominik.slawkowski@gmail.com
           </a>
-          !
+          .
         </p>
       </h3>
     </div>
