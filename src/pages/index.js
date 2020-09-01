@@ -179,9 +179,14 @@ const renderImage = (image, offset) => (
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+
     <div
       css={css`
         margin: 50px 10vw 0;
+
+        @media (max-width: 1090px) {
+          margin: 50px 0 0;
+        }
       `}
     >
       <Step
@@ -248,11 +253,10 @@ const IndexPage = ({ data }) => (
       <Step
         image={data.step5}
         steps={[
-          <>Now you can choose the right survey.</>,
           <>
-            Click on the box {renderImage(data.surveyBox, -23)}, then send it to
-            the customer.
+            Now you can <Highlight>choose the right survey</Highlight>.
           </>,
+          <>Click on the box, then send it to the customer.</>,
         ]}
       />{' '}
       <Step

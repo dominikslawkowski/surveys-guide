@@ -20,16 +20,15 @@ const imageCss = reverse => css`
   max-width: 800px;
   border-radius: 0.5rem;
   margin-right: 20px;
+  -webkit-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
 
   ${reverse &&
   css`
     margin-right: 0;
     margin-left: 20px;
   `}
-
-  -webkit-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 10px 31px -4px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 1400px) {
     margin: 0 auto;
@@ -42,8 +41,16 @@ const stepsCss = reverse => css`
   margin-top: 25px;
   font-size: 25px;
 
+  ${reverse &&
+  css`
+    margin-left: 0;
+    margin-right: 20px;
+  `}
+
   @media (max-width: 1400px) {
     max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   > p {
@@ -51,12 +58,6 @@ const stepsCss = reverse => css`
     margin-bottom: 30px;
     font-weight: 500;
   }
-
-  ${reverse &&
-  css`
-    margin-left: 0;
-    margin-right: 20px;
-  `}
 `
 
 const elementCss = css`

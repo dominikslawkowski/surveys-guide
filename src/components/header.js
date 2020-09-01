@@ -13,6 +13,10 @@ const headerCss = css`
 const headingCss = css`
   display: flex;
   align-items: center;
+
+  @media (max-width: 690px) {
+    flex-direction: column;
+  }
 `
 
 const Header = () => {
@@ -35,9 +39,20 @@ const Header = () => {
           fixed={data.file.childImageSharp.fixed}
           css={css`
             margin-right: 20px;
+
+            @media (max-width: 690px) {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
           `}
         />
-        How to use Surveys?
+        <span
+          css={css`
+            text-align: center;
+          `}
+        >
+          How to use Surveys?
+        </span>
       </h1>
     </header>
   )
