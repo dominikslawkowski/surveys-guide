@@ -104,6 +104,7 @@ const Privacy = () => {
         </a>
         <br />
       </p>
+      
       <h3>4. Why we collect information about you - purpose of processing</h3>
       <p>
         We will use information about you for delivering our Services to you
